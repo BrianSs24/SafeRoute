@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SafeRoute",
-    "slug": "SafeRoute",
+    "slug": "saferoute",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +17,13 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.brianss24.saferoute",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDIFjl367DpdMmBtzIBruKgjP00sh8HAaU"
+        }
+      }
     },
     "web": {
       "output": "static",
@@ -39,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a13bd0ba-a993-49bc-9a68-06174ec16d6c"
+      }
     }
   }
 }
