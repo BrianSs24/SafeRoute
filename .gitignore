@@ -1,43 +1,90 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ======================================
+# Dependencies
+# ======================================
 node_modules/
 
+# ======================================
 # Expo
+# ======================================
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
 
+# ======================================
 # Native
+# ======================================
 .kotlin/
 *.orig.*
 *.jks
+*.keystore
 *.p8
 *.p12
 *.key
 *.mobileprovision
 
+# ======================================
+# Android
+# ======================================
+android/.gradle/
+android/app/build/
+android/build/
+
+# ======================================
+# iOS
+# ======================================
+ios/build/
+
+# ======================================
 # Metro
+# ======================================
 .metro-health-check*
 
-# debug
+# ======================================
+# Logs
+# ======================================
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
+# ======================================
+# Environment Variables
+# ======================================
+.env
+.env.*
+!.env.example
 
-# local env files
-.env*.local
+# ======================================
+# Editors
+# ======================================
+.vscode/
 
-# typescript
+# ======================================
+# TypeScript
+# ======================================
 *.tsbuildinfo
 
-example
+# ======================================
+# macOS
+# ======================================
+.DS_Store
 
-# generated native folders
+# ======================================
+# Windows
+# ======================================
+Thumbs.db
+desktop.ini
+
+# ======================================
+# Firebase Admin (Nunca subir)
+# ======================================
+serviceAccountKey.json
+firebase-admin.json
+
+# ======================================
+# Generated native folders (Expo Prebuild)
+# ======================================
 /ios
 /android
