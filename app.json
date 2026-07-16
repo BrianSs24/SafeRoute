@@ -51,8 +51,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "a13bd0ba-a993-49bc-9a68-06174ec16d6c"
+        "projectId": "7ee94f21-cfe6-4e69-9005-6425c67f347b"
       }
-    }
+    },
+    "owner": "brianso"
   }
 }

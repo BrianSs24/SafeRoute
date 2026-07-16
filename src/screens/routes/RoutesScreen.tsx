@@ -181,7 +181,11 @@ export default function RoutesScreen() {
     setPlaces([]);
 
   }
+function closeIncident() {
 
+  setSelectedIncident(null);
+
+}
   if (loading) return null;
   return (
 
@@ -200,19 +204,37 @@ export default function RoutesScreen() {
       showsUserLocation
       showsCompass
       showsMyLocationButton={false}
-      onPanDrag={() => {
+      onPress={() => {
 
-        if (places.length > 0) {
+  closeIncident();
 
-          Keyboard.dismiss();
+  if (places.length > 0) {
 
-          searchInputRef.current?.blur();
+    Keyboard.dismiss();
 
-          setPlaces([]);
+    searchInputRef.current?.blur();
 
-        }
+    setPlaces([]);
 
-      }}
+  }
+
+}}
+
+onPanDrag={() => {
+
+  closeIncident();
+
+  if (places.length > 0) {
+
+    Keyboard.dismiss();
+
+    searchInputRef.current?.blur();
+
+    setPlaces([]);
+
+  }
+
+}}
     >
 
       {routeCoordinates.length > 0 && (
@@ -435,8 +457,9 @@ export default function RoutesScreen() {
     />
 
     <IncidentBottomSheet
-      incident={selectedIncident}
-    />
+  incident={selectedIncident}
+  onClose={closeIncident}
+/>
 
   </View>
 
