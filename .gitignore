@@ -87,4 +87,4 @@ firebase-admin.json
 # Generated native folders (Expo Prebuild)
 # ======================================
 /ios
-/android
+/androidgit add .
